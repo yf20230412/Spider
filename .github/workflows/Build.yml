@@ -32,7 +32,7 @@ jobs:
       run: |
         git clone --recurse-submodules https://github.com/FongMi/CatVodSpider project
         sed -i 's/mirrors.cloud.tencent.com\gradle/services.gradle.org\/distributions/g' project/gradle/wrapper/gradle-wrapper.properties        
-        cp -r ./project/json/index.json ./json/index.json
+        #cp -r ./project/json/index.json ./json/index.json
         
     - name: Customize Spider
       working-directory: ./project
